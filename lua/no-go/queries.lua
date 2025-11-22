@@ -9,18 +9,18 @@ M.error_query = [[
       (statement_list
         (return_statement
           (expression_list
-            (identifier) @return_identifier)?)))) @collapse_block) @if_statement
+            (identifier) @return_identifier))?))) @collapse_block) @if_statement
 ]]
 
 M.import_query = [[
-  (import_declaration 
-    (import_spec_list 
-      (import_spec 
-        path: (interpreted_string_literal 
-          (interpreted_string_literal_content))) 
-      (import_spec 
-        path: (interpreted_string_literal 
-          (interpreted_string_literal_content)))) @collapse_block) @import_statement 
+  (import_declaration
+    (import_spec_list
+      (import_spec
+        path: (interpreted_string_literal
+          (interpreted_string_literal_content)))
+      (import_spec
+        path: (interpreted_string_literal
+          (interpreted_string_literal_content)))) @collapse_block) @import_statement
 ]]
 
 return M
